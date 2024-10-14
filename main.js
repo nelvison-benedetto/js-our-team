@@ -56,12 +56,12 @@ function generateTeam(member){
 
 const team = document.getElementById("team");
 
-let totMarkup = "";
+let totMarkup = "";  //append as str every div for col
 teamMembers.forEach( (item,index) => {
   const member = teamMembers[index];
   const murkup = generateTeam(member);
   totMarkup += murkup;
 });
-team.innerHTML = totMarkup ;
+team.innerHTML = totMarkup;  //insert in div id="team" as html code all the str totMarkup
 console.log(totMarkup);
 

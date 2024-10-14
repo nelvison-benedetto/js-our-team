@@ -16,7 +16,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <script src="./main.js" defer></script>
+        <script src="./main.js" defer></script> <!-- use defer to run js scripts after html! otherwise .getElementById can't find id in html -->
     </head>
 
     <body>
@@ -24,9 +24,62 @@
         </header>
         <main>
             <div class="container">
+                <div class="add-member">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="name"
+                                id="name"
+                                aria-describedby="helpId"
+                                placeholder="Insert a name"
+                            />
+                            <small id="helpId" class="form-text text-muted">Your name</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="role" class="form-label">Role</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="role"
+                                id="role"
+                                aria-describedby="helpId"
+                                placeholder="Insert a role"
+                            />
+                            <small id="helpId" class="form-text text-muted">Your role</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="email"
+                                id="email"
+                                aria-describedby="helpId"
+                                placeholder="Insert a email"
+                            />
+                            <small id="helpId" class="form-text text-muted">Your email</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="img" class="form-label">Imagine URL</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="img"
+                                id="img"
+                                aria-describedby="helpId"
+                                placeholder="Insert a img"
+                            />
+                            <small id="helpId" class="form-text text-muted">Your image</small>
+                        </div>
+                    </form>
+                </div>
+
                 <div id="team" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
 
-
+                    <!-- <img src="./assets/images/" alt=""> -->
                 </div>
             </div>
 
