@@ -65,3 +65,16 @@ teamMembers.forEach( (item,index) => {
 team.innerHTML = totMarkup;  //insert in div id="team" as html code all the str totMarkup
 console.log(totMarkup);
 
+const formEl = document.getElementById('form');
+formEl.addEventListener('submit',function(e){
+  e.preventDefault();
+  let name = e.target.name.value;
+  let role = e.target.role.value;
+  let email = e.target.email.value;
+  let img = e.target.img.value;
+  const member = {name,role,email,img};
+  const murkup = generateTeam(member);
+  totMarkup += murkup;
+  team.innerHTML = totMarkup;
+  //console.log(member);
+});
